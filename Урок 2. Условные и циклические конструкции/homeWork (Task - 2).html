@@ -1,0 +1,33 @@
+﻿<!-- 
+    
+
+    2. Построить прямоугольный треугольник состоящий из символа "*".
+
+      
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+      var k = 5;
+      var row = 0;
+      var result = "";
+      while (row < k) {
+        var col = 0;
+        while (col <= row) {
+            result = result + "*";
+            if (col == row) {
+                result = result + "\n";
+            }
+            col++;
+        }
+        row++;
+
+      }
+      console.log(result);
+    </script>
+</head>
+<body>
+</body>
+</html>

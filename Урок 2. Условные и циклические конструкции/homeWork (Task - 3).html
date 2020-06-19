@@ -1,0 +1,43 @@
+﻿<!-- 
+    
+    3. Определить какое из трех, введенных пользователем, чисел максимальное и вывести его на экран.
+
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+      var num1 = +prompt("Please enter the First number");
+      var num2 = +prompt("Please enter the Second number");
+      var num3 = +prompt("Please enter the Third number");
+      var max = "";
+
+      if(num1 == num2 || num2 == num3 || num1 == num3 ) {
+         console.log('Error');
+      }
+      else ('Enter the correct number');
+
+      if ( num1 > num2 ) {
+        console.log(max = "the biggest number is " + num1);
+      }
+      
+      else if ( num2 > num3 ) { 
+        console.log(max = "the biggest number is " + num2);
+      }
+      
+      else if ( num3 > num1 ){
+        console.log(max = "the biggest number is " + num3);
+      }
+      else {
+          console.log("Error");
+      }
+    
+
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>

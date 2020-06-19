@@ -1,0 +1,46 @@
+﻿<!-- 
+    
+    4. Дано два числа A и B где (A<B). 
+    Выведите на экран суму всех чисел расположенных в числовом промежутке от А до В. 
+    Выведите на экран все нечетные значения, расположенные в цифровом промежутке от А до В.   
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+      
+      var a = 5;
+      var b = 10;
+      var sum = 0;
+     
+
+      while (a <= b){
+        console.log(a);
+        a++;
+        
+        for (sum = a; a <= b; a++){
+            sum = sum + a;
+            console.log(sum); 
+            
+              
+        }
+      }
+      if (sum % 2 === 0) {
+        console.log(sum);
+      };
+      
+
+    
+      
+       
+
+
+
+
+
+         </script>
+</head>
+<body>
+</body>
+</html>

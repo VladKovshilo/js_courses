@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+     
+        
+        <!-- Task 2:
+            Перепишите if..else с использованием нескольких операторов '?'.
+            Для читаемости рекомендуется разбить код на несколько строк.
+            let message;
+            if (login == 'Сотрудник') {
+                message = 'Привет';
+            } else if (login == 'Директор') {
+                message = 'Здравствуйте';
+            } else if (login == '') {
+                message = 'Нет логина';
+            } else {
+                message = '';
+            }
+         -->
+
+<script>
+    var massage;
+    var login = prompt( 'Enter youre  login');
+
+    massage = (login == 'Сотрудник') ? 'Привет' : (login == 'Директор') ? 'Здравствуйте' : (login == '') ? 'Нет логина' : massage = '';
+     
+    console.log( massage);
+
+</script> 
+     
+</body>
+</html>
