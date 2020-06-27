@@ -13,11 +13,24 @@
 
      <script>
          function isEmpty(obj){
-             if (obj.length == 0){
+             for (var key in obj){
+                console.log(false);
+
+                 return false;
                  
 
              }
+             console.log(true);
+             return true;
          }
+         var a = {
+
+         };
+         var b ={
+             t: 5,
+         };
+         isEmpty(a);
+         isEmpty(b);
 
      </script>
 </body>

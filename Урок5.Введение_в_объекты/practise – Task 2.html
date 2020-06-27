@@ -26,13 +26,21 @@
      <script>
         function findElement(arr, func) {
         var test = 0;
-        if(func(test)){
+        for (var i = 0; i < arr.length; i++){
+            test = arr[i]; 
+            if(func(test)){
+            console.log(test);
             return test;
         }
-        return num;
-        }
 
-        findElement([1, 2, 3, 4], function(num) {return num % 2 === 0} );
+        
+        }
+        console.log(undefined);
+        return undefined;
+        }
+        
+
+        findElement([1, 1, 1, 1], function(num) {return num % 2 === 0} );
      </script>
 </body>
 </html>

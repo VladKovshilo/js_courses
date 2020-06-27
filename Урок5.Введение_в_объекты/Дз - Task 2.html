@@ -10,28 +10,34 @@
       <title></title>
         <script>
            var calculator = {
-            sum() {
+              a: 1,
+               b: 1,
+            sum: function() {
                return this.a + this.b;
             },
-            min(){
+            min: function(){
                return this.a - this.b;
             },
          
-            mul() {
+            mul: function() {
                return this.a * this.b;
             },
-            dev(){
+            dev: function(){
                return this.a / this.b;
             },
          
-            read() {
-               this.a = +prompt('Enter the number');
-               this.b = +prompt('Enter the number');
-            }
+            
          };
+         calculator.a = +prompt('asdasd');
+         calculator.b = +prompt('erwerwr');
+         var sign = prompt('Enter the sign');
+            if (sign == "+"){
+               alert(calculator.sum());
+            }
+            else if(sign == "-"){
+               
+            }
 
-         console.log(calculator);
-         console.log(sum);
 
 
 

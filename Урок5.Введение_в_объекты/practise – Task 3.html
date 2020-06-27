@@ -19,12 +19,17 @@
 
      <script>
          function booWho(bool) {
-        return bool;
+            if(bool == true || bool == false){
+                console.log(true)
+            } else {
+                console.log(false)
+            };
         }
 
         booWho(null);
-        console.log(typeof booWho); 
-        console.log(booWho instanceof Function );
+        booWho(25);
+        booWho(true);
+        
      </script>
 </body>
 </html>

@@ -9,10 +9,24 @@
      <head>
       <title></title>
         <script>
+            
            var point= {
-              x = 1,
-              y = 1,
+              x : 1,
+              y : 1,
+              GetQuadrant: function(){ 
+                 var a = this.x;
+                 var b = this.y;
+                 if (a > 0 && b > 0 ){
+                    alert("Перший квадрант");
+                 } else if (a < 0 && b > 0){
+                    alert("Другий квадрант");
+                 }
+              }
            }
+           point.x = +prompt('Enter x');
+           point.y = +prompt('Enter y');
+           point.GetQuadrant();
+
 
             
         </script>

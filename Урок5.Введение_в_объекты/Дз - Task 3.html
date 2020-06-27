@@ -23,7 +23,125 @@
       <title></title>
         <script>
          //   var arr = [ "name" , 'sName' , 'age' , 'occupation' , 'show' ];
+         var arr = [ 
+          sotrudnik1 = {
+            name: prompt('Enter name'),
+            sName: prompt('Enter sName'),
+            age: +prompt("Enter age"),
+            occupation: prompt("Enter occup"),
+            cash: function(){
+               if (this.occupation == "director"){
+                  this.sallary = 3000;
+                  
+               } else if (this.occupation == 'manager'){
+                  this.sallary = 1500;
+               } else if(this.occupation == 'programmer'){
+                  this.sallary = 2000;
 
+               }else {
+                  this.sallary = 1000;
+               }
+
+            },
+               show: function(){
+                  console.log("name: " + this.name);
+                  console.log("sName: " + this.sName);
+                  console.log("age: " + this.age);
+                  console.log("occupation: " + this.occupation);
+                  console.log('sallary: ' + this.sallary);
+               }
+
+         },
+
+          sotrudnik2 = {
+            name: prompt('Enter name'),
+            sName: prompt('Enter sName'),
+            age: +prompt("Enter age"),
+            occupation: prompt("Enter occup"),
+               show: function(){
+                  console.log("name: " + this.name);
+                  console.log("sName: " + this.sName);
+                  console.log("age: " + this.age);
+                  console.log("occupation: " + this.occupation);
+               },
+               cash: function(){
+               if (this.occupation == "director"){
+                  this.sallary = 3000;
+                  
+               } else if (this.occupation == 'manager'){
+                  this.sallary = 1500;
+               } else if(this.occupation == 'programmer'){
+                  this.sallary = 2000;
+
+               }else {
+                  this.sallary = 1000;
+               }
+
+            },
+
+         }
+         ];
+         for (var i = 0; i < arr.length; i++){ 
+            arr[i].show();
+            arr[i].cash();
+            arr[i].show();
+         };
+         var sortMethod  = prompt('enter name,sname,age,occup to sort');
+         arr.sort(function(a, b){
+            switch (sortMethod) {
+               case "name": 
+               if (a.name > b.name){
+                  return 1
+                  } else if (b.name > a.name){
+                     return -1
+                  } else {
+                     return 0
+                  };
+                  break;
+               case "sname": 
+                   if (a.sName > b.sName){
+                  return 1
+                  } else if (b.sName > a.sName){
+                     return -1
+                  } else {
+                     return 0
+                  };
+               break;
+               case "age": 
+                   if (a.age > b.age){
+                  return 1
+                  } else if (b.age > a.age){
+                     return -1
+                  } else {
+                     return 0
+                  };
+               break;
+               case "occupation": 
+                   if (a.occupation > b.occupation){
+                  return 1
+                  } else if (b.occupation > a.occupation){
+                     return -1
+                  } else {
+                     return 0
+                  };
+               break;
+               case "sallary": 
+                   if (a.sallary > b.sallary){
+                  return 1
+                  } else if (b.sallary > a.sallary){
+                     return -1
+                  } else {
+                     return 0
+                  };
+               break;
+               default: 
+               alert("Not correct name");
+               break;
+            } 
+         })
+         console.log(arr);
+         
+         
             
         </script>
     </head>
