@@ -12,10 +12,46 @@
     <script type="text/javascript">
         
 
-    var x = 0;
     
+        var userChoise = prompt('');
+            alert(userChoise);
     var computerChoice = Math.random();
+        
+        if (computerChoice <= 0.33 ){
+            computerChoice = "Бумага"
+        } else if ((0.33 < computerChoice) && (computerChoice <= 0.66)){
+            computerChoice = "Ножиці"
+            
+        } else {
+            computerChoice = "Камінь"
+        }
         alert(computerChoice);
+
+        
+        if (computerChoice == userChoise){
+            alert("нічия");
+        }
+        else if (userChoise == "Камінь"){
+            if (computerChoice == "Ножиці"){
+                alert('Перемога');
+            } else if (computerChoice == "Бумага"){
+                alert("Поразка");
+            } 
+        } else if (userChoise == "Ножиці"){
+            if (computerChoice == "Бумага"){
+                alert('Перемога');
+            } else if (computerChoice == "Камінь"){
+                alert("Поразка");
+            } 
+        } else if (userChoise == "Бумага"){
+            if (computerChoice == "Камінь"){
+                alert('Перемога');
+            } else if (computerChoice == "Ножиці"){
+                alert("Поразка");
+            } 
+        }
+
+        
         
     </script>
 </head>
