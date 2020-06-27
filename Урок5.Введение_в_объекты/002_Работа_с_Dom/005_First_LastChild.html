@@ -1,0 +1,35 @@
+﻿<!-- Свойства firstElementChild и lastElementChild показывают на первый и последний дочерние элементы и равны null, если потомков нет. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Работа с DOM деревом</title>
+        <style>
+            p{
+                color: green!important;
+            }
+        </style>
+    </head>
+    <body>
+    <div id="demo">
+        <div></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <button onclick="myFunction()">Click me!</button>
+
+    <script>
+         var demo = document.getElementById("demo");
+        function myFunction() {
+            //var demo = document.getElementById("demo");
+
+            demo.firstElementChild.innerHTML = 'test';
+            demo.lastElementChild.style.fontSize = 'red';
+        }
+        console.log(demo.lastElementChild);
+    </script>
+    </body>
+</html>
