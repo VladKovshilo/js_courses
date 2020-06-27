@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practise_Lesson4</title>
+</head>
+<body>
+    <!-- 
+        
+        3. Напишите функцию которая бы переворачивала предоставленную строку
+        Возможно, вам придется превратить строку в массив, прежде чем вы можете обратить его. 
+        Ваш результат должен быть строкой.
+        "something"
+
+        
+     -->
+
+     <script>
+         function newString(str) {
+             var arr = str.split('');
+             var reverseArr = arr.reverse();
+             var result = reverseArr.join('');
+             
+
+             return result;
+
+         }
+
+         console.log(newString('something'));
+         
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+﻿<!-- 
+    1. Создать функцию calculate(operand1, operand2, sign), где operand1 и operand2 — два числа, sign — знак арифметической операции.
+       Функция должна расчитывать результат операции, исходя из переданного ей знака. 
+       Функция должна проверять корректность введенных чисел и знака операции.
+       Все аргументы для функции принять от пользователя.
+
+    
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+       
+       function plus(a , b){
+           return a + b;
+       }
+       function minus (a , b) {
+           return a - b;
+       }
+       function plural (a , b){
+           return a * b;
+       }
+       function division (a , b){
+           return a / b
+        }
+
+        var operand1 = +prompt('enter the first number');
+        var operand2 = +prompt('enter the second number');
+        var sign = prompt('Enter the sign + - * / ');
+        var result;
+
+        switch (sign) {
+            case '+':{
+                result = operand1 + operand2;
+                break;
+            }
+            case '-': {
+                result = operand1 - operand2;
+                break;
+            }
+            case '*': {
+                result = operand1 * operand2;
+                break;
+
+            }
+            case '/': {
+                result = operand1 / operand2;
+                break;
+            }
+            default:
+            document.write ('Operand - ' + sign + ', it`s not correct , please enter the correct sign');
+
+        }
+        if (result != undefined) {
+            document.write("Result of operation is  " + result);
+        }
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>
